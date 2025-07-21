@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  /* pas de margin-top par défaut */
+}
+
+.container.with-header {
+  margin-top: 70px; /* Décalage uniquement si header visible */
+}

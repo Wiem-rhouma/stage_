@@ -1,0 +1,9 @@
+<app-header *ngIf="showHeader" (toggleSidebar)="toggleSidebar()"></app-header>
+
+<div class="container" [class.with-header]="showHeader">
+  <app-sidebar *ngIf="showSidebar"></app-sidebar>
+
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
